@@ -15,7 +15,7 @@ module Formtastic
          :required          => nil,
          :autofocus         => nil,
          :class             => 'token-input',
-         'data-model-name' => reflection.klass.model_name.singular
+         'data-model-name' => reflection.klass.model_name.underscore
         }).tap do |html_options|
           if record.present?
             html_options["data-pre"] = prepopulated_value.to_json
