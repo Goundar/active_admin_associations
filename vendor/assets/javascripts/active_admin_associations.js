@@ -1,4 +1,5 @@
 //= require jquery.tokeninput
+//= require jquery.livequery.min
 
 $(document).ready(function(){
   $('input.token-input').tokenInput(function($input){
