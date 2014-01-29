@@ -3,6 +3,7 @@
 
 $('input.token-input').livequery(function(){
   $('input.token-input').not('.loaded').tokenInput(function($input){
+    $input.addClass("loaded")
     var modelName = $input.data("model-name");
     return "/autocomplete/"+modelName;
   }, {
@@ -12,5 +13,5 @@ $('input.token-input').livequery(function(){
     tokenLimit: 1,
     preventDuplicates: true
   });
-  $(this).addClass("loaded")
+  
 });
